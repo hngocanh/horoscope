@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Horoscope Result</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Horoscope</h1>
+      <p class="subtitle">The stars speak to you</p>
+    </header>
+
+    <div class="progress">
+      <div class="progress-dot completed"></div>
+      <div class="progress-dot completed"></div>
+      <div class="progress-dot completed"></div>
+      <div class="progress-dot completed"></div>
+    </div>
+
+    <div class="result-container">
+      <div class="result-header">
+        <h2 id="resultTitle"></h2>
+      </div>
+
+      <div class="selection-display" id="selectionDisplay">
+        <!-- Selections will be displayed here -->
+      </div>
+
+      <p class="horoscope-text" id="horoscopeText"></p>
+
+      <div class="lucky-section">
+        <div class="lucky-grid">
+          <div class="lucky-item">
+            <div class="lucky-label">Star Rating</div>
+            <div class="lucky-value star-rating" id="starRating"></div>
+          </div>
+          <div class="lucky-item">
+            <div class="lucky-label">Lucky Number</div>
+            <div class="lucky-value" id="luckyNumber"></div>
+          </div>
+          <div class="lucky-item">
+            <div class="lucky-label">Lucky Color</div>
+            <div class="lucky-value lucky-color" id="luckyColor"></div>
+          </div>
+          <div class="lucky-item">
+            <div class="lucky-label">Lucky Time</div>
+            <div class="lucky-value" id="luckyTime"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="btn btn-secondary" onclick="startOver()">Start Over</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Horoscope Type</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Select Horoscope Type</h1>
+      <p class="subtitle">Choose what guidance you seek today</p>
+    </header>
+
+    <div class="progress">
+      <div class="progress-dot completed"></div>
+      <div class="progress-dot completed"></div>
+      <div class="progress-dot active"></div>
+      <div class="progress-dot"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="card" data-type="daily" onclick="selectHoroscopeType('daily')">
+        <div class="card-icon"></div>
+        <div class="card-title">Daily</div>
+        <div class="card-subtitle">Your general forecast</div>
+      </div>
+      <div class="card" data-type="money" onclick="selectHoroscopeType('money')">
+        <div class="card-icon"></div>
+        <div class="card-title">Money</div>
+        <div class="card-subtitle">Financial guidance</div>
+      </div>
+      <div class="card" data-type="love" onclick="selectHoroscopeType('love')">
+        <div class="card-icon"></div>
+        <div class="card-title">Love</div>
+        <div class="card-subtitle">Romance & relationships</div>
+      </div>
+      <div class="card" data-type="career" onclick="selectHoroscopeType('career')">
+        <div class="card-icon"></div>
+        <div class="card-title">Career</div>
+        <div class="card-subtitle">Work & ambition</div>
+      </div>
+      <div class="card" data-type="family" onclick="selectHoroscopeType('family')">
+        <div class="card-icon"></div>
+        <div class="card-title">Family</div>
+        <div class="card-subtitle">Home & relationships</div>
+      </div>
+      <div class="card" data-type="health" onclick="selectHoroscopeType('health')">
+        <div class="card-icon"></div>
+        <div class="card-title">Health</div>
+        <div class="card-subtitle">Wellness & vitality</div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="btn" id="continueBtn" disabled onclick="getHoroscope()">Get My Horoscope</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
